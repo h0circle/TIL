@@ -10,7 +10,7 @@
 <br><br>
 <h2>🍟 Java Script</h2>
 <ul>
-<li>조건문<a href="https://github.com/h0circle/TIL/blob/main/Java%20Script/%EC%97%B0%EC%82%B0%EC%9E%90.md"></a></li>
+<li><a href="https://github.com/h0circle/TIL/blob/main/Java%20Script/%EC%97%B0%EC%82%B0%EC%9E%90.md">조건문</a></li>
 </ul>
 <h2>🍕 Type Script</h2>
 <h2>🌭 React</h2>
