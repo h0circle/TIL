@@ -21,6 +21,5 @@
 <h2>🖥 Computer Science</h2>
 <h2>📚 Code Tests</h2>
 <ul>
-<li><a href="https://github.com/h0circle/TIL/blob/main/Code%20Tests/%EC%A7%9D%EC%88%98%EC%9D%98%ED%95%A9.md">짝수의 합</a></li>
-<li><a href="https://github.com/h0circle/TIL/blob/main/Code%20Tests/%EB%B0%B0%EC%97%B4%EC%9D%98%ED%8F%89%EA%B7%A0%EA%B0%92.md">배열의 평균값</a></li>
+<li><a href="">Programmers_March</a></li>
 </ul>
