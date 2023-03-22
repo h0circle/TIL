@@ -16,6 +16,7 @@
 <h2>🍕 Type Script</h2>
 <h2>🌭 React</h2>
 <ul>
+<li><a href="https://github.com/h0circle/TIL/blob/main/React/useEffect.md">useEffect Hook</a></li>
 </ul>
 <h2>🖥 Computer Science</h2>
 <h2>📚 Code Tests</h2>
