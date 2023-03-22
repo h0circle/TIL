@@ -68,7 +68,7 @@ function solution(numbers) {
 
 <br>
 
-## 🐣 풀이
+### 🐣 풀이
 
 1. numbers의 길이만큼 for 문을 돌려준다.
 2. numbers[i]들을 answer에 하나씩 더해준다.
