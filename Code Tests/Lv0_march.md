@@ -225,3 +225,148 @@ function solution(numbers) {
     return number[0] * number[1];
 }
 ```
+
+<br>
+
+<div align="center">
+<h1>💫 배열 뒤집기</h1>
+</div>
+
+<div align="center">
+📆 2023.03.24
+</div>
+<br>
+
+```plaintext
+정수가 들어 있는 배열 num_list가 매개변수로 주어집니다. num_list의 원소의 순서를 거꾸로 뒤집은 배열을 return하도록 solution 함수를 완성해주세요.
+```
+
+<br>
+
+## 📌 My Answer
+
+```JavaScript
+function solution(num_list) {
+    return num_list.reverse();
+}
+```
+
+<br>
+
+### 🐣 풀이
+
+1. reverse() 함수를 사용해 배열을 뒤집는다.
+2. 뒤집은 배열을 반환한다.
+
+<br>
+
+### ❗ reverse() 함수를 사용하지 않고 해보기
+
+```JavaScript
+function solution(num_list) {
+let answer = [];
+let a = num_list.length;
+for (let i = 1; i <= a; i++) {
+    answer.push(num_list[a - i])
+    }
+    return answer;
+}
+```
+
+<br>
+
+<div align="center">
+<h1>🔺 삼각형의 완성조건 (1)</h1>
+</div>
+
+```plaintext
+선분 세 개로 삼각형을 만들기 위해서는 다음과 같은 조건을 만족해야 합니다.
+* 가장 긴 변의 길이는 다른 두 변의 길이의 합보다 작아야 합니다.
+삼각형의 세 변의 길이가 담긴 배열 sides이 매개변수로 주어집니다. 세 번으로 삼각형을 만들 수 있다면 1, 만들 수 없다면 2를 return 하도록 solution 함수를 완성해주세요.
+```
+
+<br>
+
+## 📌 My Answer
+
+```JavaScript
+function solution(sides) {
+    const array = sides.sort((a, b) => a - b);
+    if (array[0] + array[1] <= array[2]>) {
+        return 2;
+    } else {
+        return 1;
+    }
+}
+```
+
+<br>
+
+### 🐣 풀이
+
+1. sort 함수와 파라미터를 통해 배열을 오름차순으로 정렬 해준다.
+2. if 문을 작성하여 0번째 값과 1번째 값을 더했을 떄 2번째 값보다 크거나 작을 경우의 조건을 걸어준다.
+3. if 문에 작성한 조건에 맞을 때 2를 return 하게 하고 조건에 일치하지 않을 때 1을 return 한다.
+
+<br>
+
+### ❗if 문을 사용하지 않고 삼항조건연산자를 사용하는 법
+
+```JavaScript
+function solution(sides) {
+    sides = sides.sort((a, b) => a - b);
+    return sides[0] + sides[1] > sides[2] ? 1 : 2
+}
+```
+
+<br>
+
+<div align="center">
+<h1>🍕 피자 나눠 먹기 (3)</h2>
+</div>
+
+```plaintext
+머쓱이네 피자가게는 피자를 두 조각에서 열 조각까지 원하는 조각 수로 잘라줍니다. 피자 조각 수 slice와 피자를 먹는 사람의 수 n이 매개변수로 주어질 때, n명의 사람이 최소 한 조각 이상 피자를 먹으려면 최소 몇 판의 피자를 시켜야 하는지를 return하도록 solution 함수를 완성해보세요.
+```
+
+<br>
+입출력 예
+
+| slice |  n  | result |
+| :---: | :-: | :----: |
+|   7   | 10  |   2    |
+|   4   | 12  |   3    |
+
+<br>
+
+## 📌 My Answer
+
+```JavaScript
+function solution(slice, n) {
+    const answer = (n % slice == 0) ? n / slice : n / slice + 1;
+    return Math.floor(answer);
+}
+```
+
+<br>
+
+### 🐣 풀이
+
+1. 삼항조건연산문을 사용해 사람수 % 나눈조각이 0과 같을 때는 사람수 / 조각, 아닐 땐 사람수 / 조각에 + 1
+2. Math.floor()함수를 사용해 소숫점을 버려준 값을 리턴한다.
+
+<br>
+
+### ❗ Math.ceil() 함수를 사용
+
+```JavaScript
+function solution(slice, n) {
+    return Math.ceil(n / slice);
+}
+```
+
+❗ Math.ceil() 함수란?
+<br>
+
+- 소수점 이하를 올림해주는 함수
+  <br>
