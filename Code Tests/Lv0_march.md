@@ -276,7 +276,7 @@ for (let i = 1; i <= a; i++) {
 <br>
 
 <div align="center">
-<h1>🔺 삼각형의 완성조건 (1)</h1>
+<h2>🔺 삼각형의 완성조건 (1)</h2>
 </div>
 
 ```plaintext
@@ -322,7 +322,7 @@ function solution(sides) {
 <br>
 
 <div align="center">
-<h1>🍕 피자 나눠 먹기 (3)</h2>
+<h2>🍕 피자 나눠 먹기 (3)</h2>
 </div>
 
 ```plaintext
