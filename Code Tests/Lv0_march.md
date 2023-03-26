@@ -229,7 +229,7 @@ function solution(numbers) {
 <br>
 
 <div align="center">
-<h1>💫 배열 뒤집기</h1>
+<h2>💫 배열 뒤집기</h2>
 </div>
 
 <div align="center">
@@ -330,6 +330,7 @@ function solution(sides) {
 ```
 
 <br>
+
 입출력 예
 
 | slice |  n  | result |
@@ -369,4 +370,52 @@ function solution(slice, n) {
 <br>
 
 - 소수점 이하를 올림해주는 함수
+
   <br>
+
+<div align="center">
+<h2>🙃 중앙값 구하기</h2>
+</div>
+
+```plaintext
+중앙값은 어떤 주어진 값들을 크기의 순서대로 정렬했을 때 가장 중앙에 위치하는 값을 의미한다. 예를 들어 1, 2, 7, 10, 11의 중앙값은 7입니다. 정수 배열 array가 매개변수로 주어질 때, 중앙값을 return하도록 solution 함수를 완성해보세요.
+```
+
+<br>
+
+입출력 예
+
+| array             | result |
+| :---------------- | :----: |
+| [1, 2, 7, 10, 11] |   7    |
+| [9, -1, 0]        |   0    |
+
+<br>
+
+## 📌 My Answer
+
+```JavaScript
+function solution(array) {
+    array.sort((a, b) => a - b);
+    const answer = parseInt(array.length / 2);
+    return array[answer];
+}
+```
+
+<br>
+
+### 🐣 풀이
+
+1. 크기를 순서대로 정렬하기 위해 sort 함수를 사용한다.
+2. array 길이의 값을 2(반)으로 나눠주고 parseInt를 사용해 정수로 바꾼 값을 변수에 선언한다.
+3. array[변수로 선언한 값]을 return 해준다.
+
+<br>
+
+### ❗ 짧게 줄여보자.
+
+```JavaScript
+function solution(array) {
+    return array.sort((a, b) => a - b)[Math.floor(array.length / 2)];
+}
+```
